@@ -1,8 +1,25 @@
 aid: lotus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lotus.png
 name: Lotus
-description: 'Lotus is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Lotus (Lotus Health AI) is a consumer healthcare company delivering AI-driven medical
+  care backed by real physicians through an iOS app. The service offers an AI Doctor that analyzes
+  a member''s health, prescriptions sent to any U.S. pharmacy, lab orders across 6,000+ test sites,
+  centralized medical-record storage, and 24/7 care. Founded by KJ Dhaliwal (CEO) and Zekka Nelson
+  (CTO) with clinicians from UCLA Health, UCSF, and Johns Hopkins, and backed by CRV among others.
+  As of this enrichment pass Lotus publishes no public developer/API surface: no developer portal,
+  API documentation, OpenAPI, well-known discovery, or security.txt were found. Only an end-user
+  Intercom help center and a careers page are public.'
 url: https://raw.githubusercontent.com/api-evangelist/lotus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Health
+- Artificial Intelligence
+- Telehealth
+- Digital Health
+- Consumer App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lotus-domain-security.yml
 - type: Website
   url: https://lotus.ai/
+- type: Support
+  url: https://help.lotus.ai/en/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
